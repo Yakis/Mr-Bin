@@ -26,7 +26,6 @@ enum APIService {
     
     static func getData(_ start: String, _ end: String) async throws -> [Item] {
         guard let url = URL.collectionDays(start, end) else { throw ServerError.invalidURL }
-//        guard let url = URL(string: "https://www.doncaster.gov.uk/Compass/PremiseDetail/GetCollectionsForCalendar?UPRN=100050699177&Start=1653868800&End=1657411200&_=1656143571413") else { throw ServerError.invalidURL }
         let (data, _) = try await URLSession.shared.data(from: url)
         // Parse the JSON data
         let collectionResponse = try JSONDecoder().decode(CollectionResponse.self, from: data)

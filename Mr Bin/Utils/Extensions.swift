@@ -100,9 +100,10 @@ extension DateFormatter {
 
 extension URL {
     
-    static let base = "https://www.doncaster.gov.uk/Compass/PremiseDetail/GetCollectionsForCalendar?UPRN=100050699177"
+    static let base = "https://www.doncaster.gov.uk/Compass/PremiseDetail/GetCollectionsForCalendar?UPRN=100050699177" // Home
+//    static let base = "https://www.doncaster.gov.uk/Compass/PremiseDetail/GetCollectionsForCalendar?UPRN=100050751347" // Work
     
-    //MARK: Static resources
+    //MARK: Example: <https://www.doncaster.gov.uk/Compass/PremiseDetail/GetCollectionsForCalendar?UPRN=100050699177&Start=1653868800&End=1657411200&_=1656143571413>
     static func collectionDays(_ start: String, _ end: String) -> URL? {
         let percentEncodedStart = start.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? start
         let percentEncodedEnd = end.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? end

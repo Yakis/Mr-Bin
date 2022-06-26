@@ -14,6 +14,7 @@ struct MediumWidgetView: View {
     
     var body: some View {
         GeometryReader { geometry in
+            let size = min((geometry.size.width / CGFloat(items.count)) - 10, (geometry.size.height) - 32)
             HStack {
                 ForEach(items, id: \.id) { item in
                     VStack(spacing: 5) {
@@ -34,7 +35,7 @@ struct MediumWidgetView: View {
                                 .fontWeight(.bold)
                                 .foregroundColor(Color(UIColor.lightText))
                         }
-                        .frame(width: geometry.size.height / 1.8, height: geometry.size.height / 1.8, alignment: .center)
+                        .frame(width: size, height: size, alignment: .center)
                         .background(item.backgroundColor.hexToColor())
                         .clipShape(RoundedRectangle(cornerRadius: 10))
                         .overlay(

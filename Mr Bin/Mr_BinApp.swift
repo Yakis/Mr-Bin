@@ -14,12 +14,9 @@ struct Mr_BinApp: App {
     
     var body: some Scene {
         WindowGroup {
-            NavigationView {
             ContentView()
                 .environmentObject(mainVM)
                 .background(Color("Container"))
-                .navigationTitle("Upcoming")
-            }
         }
     }
 }
