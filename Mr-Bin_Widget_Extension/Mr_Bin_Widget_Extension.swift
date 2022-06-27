@@ -31,7 +31,7 @@ struct Provider: IntentTimelineProvider {
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         WidgetCenter.shared.reloadAllTimelines()
         let currentDate = Date()
-        let refreshDate = Calendar.current.date(byAdding: .day, value: 1, to: currentDate)!
+        let refreshDate = Calendar.current.date(byAdding: .hour, value: 6, to: currentDate)!
         Task {
             let start = String(Date().timeIntervalSince1970).components(separatedBy: ".").first
             let end = String(Date().addingTimeInterval(604800).timeIntervalSince1970).components(separatedBy: ".").first

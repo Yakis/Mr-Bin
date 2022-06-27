@@ -64,7 +64,13 @@ extension Date {
     
     func relativeDateTime() -> String {
         let dateFormatter = DateFormatter.relativeFormatter
-        return dateFormatter.localizedString(for: self, relativeTo: Date())
+        let components = Calendar.current.dateComponents(
+            [.day],
+            from: Date().addingTimeInterval(-86400),
+            to: self
+        )
+        print("From: \(Date()) to \(self)")
+        return dateFormatter.localizedString(from: components)
     }
     
 }
@@ -83,8 +89,10 @@ extension DateFormatter {
     static let relativeFormatter: RelativeDateTimeFormatter = {
         let dateFormatter = RelativeDateTimeFormatter()
         dateFormatter.unitsStyle = .full
+        dateFormatter.dateTimeStyle = .named
         return dateFormatter
     }()
+    
     
     static let standardFormatter: DateFormatter = {
         let dateFormatter = DateFormatter()

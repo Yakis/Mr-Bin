@@ -14,13 +14,13 @@ struct MediumWidgetView: View {
     
     var body: some View {
         GeometryReader { geometry in
-            let size = min((geometry.size.width / CGFloat(items.count)) - 10, (geometry.size.height) - 32)
-            HStack {
+            let size = min((geometry.size.width / CGFloat(items.count)) - 24, (geometry.size.height) - 32)
+            HStack(spacing: 16) {
                 ForEach(items, id: \.id) { item in
                     VStack(spacing: 5) {
                         Text(item.title)
                             .font(.caption)
-                            .fontWeight(.regular)
+                            .fontWeight(.semibold)
                         VStack {
                             Text(item.startTS.dateTime().components(separatedBy: " ")[0])
                                 .font(.title3)
@@ -45,11 +45,11 @@ struct MediumWidgetView: View {
                         Text("Due \(item.startTS.relativeDateTime())")
                             .font(.caption2)
                             .fontWeight(.light)
+                            .foregroundColor(Color(UIColor.lightText))
                     }
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-//            .background(LinearGradient(gradient: gradient, startPoint: .top, endPoint: .bottom))
         }
     }
     
