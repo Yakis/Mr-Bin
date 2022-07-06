@@ -19,9 +19,16 @@ final class MainVM: ObservableObject {
     
     func getData() {
         Task {
-            let start = String(Date().timeIntervalSince1970).components(separatedBy: ".").first
-            let end = String(Date().addingTimeInterval(604800).timeIntervalSince1970).components(separatedBy: ".").first
-            slots = try await APIService.getData(start!, end!)
+            slots = try await APIService.getData()
+        }
+    }
+    
+    
+    func refreshData() {
+        Task {
+            guard let start = String(Date().timeIntervalSince1970).components(separatedBy: ".").first else { return }
+            guard let end = String(Date().addingTimeInterval(604800).timeIntervalSince1970).components(separatedBy: ".").first else { return }
+            try await APIService.refreshData(start, end)
         }
     }
     

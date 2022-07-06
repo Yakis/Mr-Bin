@@ -21,13 +21,16 @@ struct ContentView: View {
                     }
                 }
             }
-//            .padding(.top)
             .navigationTitle("Upcoming")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("Help") {
-                        print("Help tapped!")
+                    Button {
+                        mainVM.refreshData()
+                    } label: {
+                        Image(systemName: "arrow.clockwise")
+                            .font(.title2)
                     }
+
                 }
             }
         }.navigationViewStyle(.stack)

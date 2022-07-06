@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15322E28286B8390007F8634 /* LargeWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15322E27286B8390007F8634 /* LargeWidgetView.swift */; };
 		154D0A1D2868C0C40079F588 /* ItemCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154D0A1C2868C0C40079F588 /* ItemCellView.swift */; };
+		155E6D9A2874AA870055D4AD /* Mr_Bin_Widget_Extension.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 155E6D9D2874AA870055D4AD /* Mr_Bin_Widget_Extension.intentdefinition */; };
+		155E6D9B2874AA870055D4AD /* Mr_Bin_Widget_Extension.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 155E6D9D2874AA870055D4AD /* Mr_Bin_Widget_Extension.intentdefinition */; };
 		15727A9D2866FA91001B1561 /* Mr_BinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15727A9C2866FA91001B1561 /* Mr_BinApp.swift */; };
 		15727A9F2866FA91001B1561 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15727A9E2866FA91001B1561 /* ContentView.swift */; };
 		15727AA12866FA92001B1561 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15727AA02866FA92001B1561 /* Assets.xcassets */; };
@@ -20,8 +23,6 @@
 		15727AC028673269001B1561 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15727ABF28673269001B1561 /* SwiftUI.framework */; };
 		15727AC328673269001B1561 /* Mr_Bin_Widget_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15727AC228673269001B1561 /* Mr_Bin_Widget_Extension.swift */; };
 		15727AC62867326B001B1561 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15727AC52867326B001B1561 /* Assets.xcassets */; };
-		15727AC82867326B001B1561 /* Mr_Bin_Widget_Extension.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 15727AC428673269001B1561 /* Mr_Bin_Widget_Extension.intentdefinition */; };
-		15727AC92867326B001B1561 /* Mr_Bin_Widget_Extension.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 15727AC428673269001B1561 /* Mr_Bin_Widget_Extension.intentdefinition */; };
 		15727ACC2867326B001B1561 /* Mr-Bin_Widget_ExtensionExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 15727ABB28673269001B1561 /* Mr-Bin_Widget_ExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		15727AD128673336001B1561 /* CollectionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15727AAE286716FC001B1561 /* CollectionResponse.swift */; };
 		15727AD22867344A001B1561 /* API Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15727AAA2866FAFE001B1561 /* API Service.swift */; };
@@ -55,7 +56,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		15322E27286B8390007F8634 /* LargeWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeWidgetView.swift; sourceTree = "<group>"; };
 		154D0A1C2868C0C40079F588 /* ItemCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCellView.swift; sourceTree = "<group>"; };
+		155E6D9C2874AA870055D4AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; name = Base; path = Base.lproj/Mr_Bin_Widget_Extension.intentdefinition; sourceTree = "<group>"; };
 		15727A992866FA91001B1561 /* Mr Bin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mr Bin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15727A9C2866FA91001B1561 /* Mr_BinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mr_BinApp.swift; sourceTree = "<group>"; };
 		15727A9E2866FA91001B1561 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,7 +72,6 @@
 		15727ABD28673269001B1561 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		15727ABF28673269001B1561 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		15727AC228673269001B1561 /* Mr_Bin_Widget_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mr_Bin_Widget_Extension.swift; sourceTree = "<group>"; };
-		15727AC428673269001B1561 /* Mr_Bin_Widget_Extension.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Mr_Bin_Widget_Extension.intentdefinition; sourceTree = "<group>"; };
 		15727AC52867326B001B1561 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15727AC72867326B001B1561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15727AD42867373E001B1561 /* SmallWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallWidgetView.swift; sourceTree = "<group>"; };
@@ -192,11 +194,12 @@
 			isa = PBXGroup;
 			children = (
 				15727AC228673269001B1561 /* Mr_Bin_Widget_Extension.swift */,
-				15727AC428673269001B1561 /* Mr_Bin_Widget_Extension.intentdefinition */,
+				155E6D9D2874AA870055D4AD /* Mr_Bin_Widget_Extension.intentdefinition */,
 				15727AC52867326B001B1561 /* Assets.xcassets */,
 				15727AC72867326B001B1561 /* Info.plist */,
 				15727AD42867373E001B1561 /* SmallWidgetView.swift */,
 				15EF3825286740510078467B /* MediumWidgetView.swift */,
+				15322E27286B8390007F8634 /* LargeWidgetView.swift */,
 			);
 			path = "Mr-Bin_Widget_Extension";
 			sourceTree = "<group>";
@@ -307,7 +310,7 @@
 				15727AAF286716FC001B1561 /* CollectionResponse.swift in Sources */,
 				15727A9F2866FA91001B1561 /* ContentView.swift in Sources */,
 				15727A9D2866FA91001B1561 /* Mr_BinApp.swift in Sources */,
-				15727AC92867326B001B1561 /* Mr_Bin_Widget_Extension.intentdefinition in Sources */,
+				155E6D9A2874AA870055D4AD /* Mr_Bin_Widget_Extension.intentdefinition in Sources */,
 				15727AAD2867026D001B1561 /* Extensions.swift in Sources */,
 				154D0A1D2868C0C40079F588 /* ItemCellView.swift in Sources */,
 			);
@@ -319,9 +322,10 @@
 			files = (
 				15727AD32867366E001B1561 /* Extensions.swift in Sources */,
 				15727AD128673336001B1561 /* CollectionResponse.swift in Sources */,
+				15322E28286B8390007F8634 /* LargeWidgetView.swift in Sources */,
 				15EF3826286740510078467B /* MediumWidgetView.swift in Sources */,
 				15727AC328673269001B1561 /* Mr_Bin_Widget_Extension.swift in Sources */,
-				15727AC82867326B001B1561 /* Mr_Bin_Widget_Extension.intentdefinition in Sources */,
+				155E6D9B2874AA870055D4AD /* Mr_Bin_Widget_Extension.intentdefinition in Sources */,
 				15727AD52867373E001B1561 /* SmallWidgetView.swift in Sources */,
 				15727AD22867344A001B1561 /* API Service.swift in Sources */,
 			);
@@ -336,6 +340,17 @@
 			targetProxy = 15727ACA2867326B001B1561 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		155E6D9D2874AA870055D4AD /* Mr_Bin_Widget_Extension.intentdefinition */ = {
+			isa = PBXVariantGroup;
+			children = (
+				155E6D9C2874AA870055D4AD /* Base */,
+			);
+			name = Mr_Bin_Widget_Extension.intentdefinition;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		15727AA52866FA92001B1561 /* Debug */ = {
@@ -459,7 +474,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_ASSET_PATHS = "\"Mr Bin/Preview Content\"";
 				DEVELOPMENT_TEAM = 4WPNK427TB;
 				ENABLE_PREVIEWS = YES;
@@ -490,7 +505,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_ASSET_PATHS = "\"Mr Bin/Preview Content\"";
 				DEVELOPMENT_TEAM = 4WPNK427TB;
 				ENABLE_PREVIEWS = YES;
@@ -520,7 +535,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = 4WPNK427TB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Mr-Bin_Widget_Extension/Info.plist";
@@ -547,7 +562,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = 4WPNK427TB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Mr-Bin_Widget_Extension/Info.plist";

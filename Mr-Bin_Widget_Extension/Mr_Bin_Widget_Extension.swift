@@ -33,9 +33,7 @@ struct Provider: IntentTimelineProvider {
         let currentDate = Date()
         let refreshDate = Calendar.current.date(byAdding: .hour, value: 6, to: currentDate)!
         Task {
-            let start = String(Date().timeIntervalSince1970).components(separatedBy: ".").first
-            let end = String(Date().addingTimeInterval(604800).timeIntervalSince1970).components(separatedBy: ".").first
-            let slots = try await APIService.getData(start!, end!)
+            let slots = try await APIService.getData()
             let entry = SlotsEntry(date: Date(), items: slots)
             let timeline = Timeline(entries: [entry], policy: .after(refreshDate))
             completion(timeline)
@@ -63,9 +61,9 @@ struct Mr_Bin_Widget_ExtensionEntryView : View {
         case .systemMedium:
             MediumWidgetView(items: entry.items, gradient: gradient)
         case .systemLarge:
-            MediumWidgetView(items: entry.items, gradient: gradient)
+            LargeWidgetView(items: entry.items, gradient: gradient)
         case .systemExtraLarge:
-            MediumWidgetView(items: entry.items, gradient: gradient)
+            LargeWidgetView(items: entry.items, gradient: gradient)
         @unknown default:
             Text("")
         }
@@ -81,6 +79,6 @@ struct Mr_Bin_Widget_Extension: Widget {
             Mr_Bin_Widget_ExtensionEntryView(entry: entry)
         }
         .configurationDisplayName("Collection day")
-        .description("Bins collection days.")
+        .description("Bin collection days.")
     }
 }

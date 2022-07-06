@@ -66,10 +66,9 @@ extension Date {
         let dateFormatter = DateFormatter.relativeFormatter
         let components = Calendar.current.dateComponents(
             [.day],
-            from: Date().addingTimeInterval(-86400),
+            from: Date(),
             to: self
         )
-        print("From: \(Date()) to \(self)")
         return dateFormatter.localizedString(from: components)
     }
     
@@ -108,15 +107,9 @@ extension DateFormatter {
 
 extension URL {
     
-    static let base = "https://www.doncaster.gov.uk/Compass/PremiseDetail/GetCollectionsForCalendar?UPRN=100050699177" // Home
-//    static let base = "https://www.doncaster.gov.uk/Compass/PremiseDetail/GetCollectionsForCalendar?UPRN=100050751347" // Work
+    static let base = "http://88.208.241.68/"
     
-    //MARK: Example: <https://www.doncaster.gov.uk/Compass/PremiseDetail/GetCollectionsForCalendar?UPRN=100050699177&Start=1653868800&End=1657411200&_=1656143571413>
-    static func collectionDays(_ start: String, _ end: String) -> URL? {
-        let percentEncodedStart = start.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? start
-        let percentEncodedEnd = end.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? end
-        let current = String(Date().timeIntervalSince1970)
-        let percentEncodedCurrent = current.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? current
-        return URL(string: "\(base)&Start=\(percentEncodedStart)&End=\(percentEncodedEnd)&_=\(percentEncodedCurrent)")
+    static func collectionDays() -> URL? {
+        return URL(string: "\(base)slots")
     }
 }

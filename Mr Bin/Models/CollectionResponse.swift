@@ -7,11 +7,6 @@
 
 import Foundation
 
-
-struct CollectionResponse: Decodable {
-    var slots: [Item]
-}
-
 struct Item: Decodable {
     let id = UUID()
     let allDay: Bool

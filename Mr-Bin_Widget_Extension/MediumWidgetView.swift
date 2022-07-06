@@ -14,7 +14,7 @@ struct MediumWidgetView: View {
     
     var body: some View {
         GeometryReader { geometry in
-            let size = min((geometry.size.width / CGFloat(items.count)) - 24, (geometry.size.height) - 32)
+            let size = min((geometry.size.width / CGFloat(items.count)) - 24, (geometry.size.height) - 60)
             HStack(spacing: 16) {
                 ForEach(items, id: \.id) { item in
                     VStack(spacing: 5) {
